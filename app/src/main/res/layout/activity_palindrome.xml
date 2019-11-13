@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PalindromeActivity">
+
+    <EditText
+        android:id="@+id/etGetP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Palindrome Number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#FFEB3B"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/tvNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="#FFEB3B"
+        />
+
+    <Button
+        android:id="@+id/btnCalcPal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Check"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>
