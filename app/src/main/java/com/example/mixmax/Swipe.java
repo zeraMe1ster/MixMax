@@ -12,7 +12,7 @@ public class Swipe extends AppCompatActivity {
 
     EditText etFirstNum, etSecondNum;
     TextView tvResultB,tvResultA;
-    Button btnPlacement,btnSwitch;
+    Button btnPlacement,btnSwitchPlace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class Swipe extends AppCompatActivity {
         tvResultA = findViewById(R.id.tvResultA);
         tvResultB = findViewById(R.id.tvResultB);
         btnPlacement = findViewById(R.id.btnPlacement);
-        btnSwitch = findViewById(R.id.btnSwitch);
+        btnSwitchPlace = findViewById(R.id.btnSwitchPlace);
 
         btnPlacement.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,18 +39,19 @@ public class Swipe extends AppCompatActivity {
             }
         });
 
-        btnSwitch.setOnClickListener(new View.OnClickListener() {
+        btnSwitchPlace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int x,y;
-                x = Integer.parseInt(etFirstNum.getText().toString());
-                y = Integer.parseInt(etSecondNum.getText().toString());
+                x = Integer.parseInt(tvResultA.getText().toString());
+                y = Integer.parseInt(tvResultB.getText().toString());
 
                 x = x + y;
                 y =  x - y;
+                x = x - y;
 
                 tvResultB.setText(Integer.toString(y));
-                x = x - y;
+
 
                 tvResultA.setText(Integer.toString(x));
 
