@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#009688"
+    tools:context=".Swipe">
+
+    <EditText
+        android:id="@+id/etFirstNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter first number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#FFEB3B"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/etSecondNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter second number"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#FFEB3B"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/tvResultB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:hint="Placement for A"
+        android:textSize="35dp"
+        android:textColor="#FFEB3B"
+        />
+
+    <TextView
+        android:id="@+id/tvResultA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:hint="Placement for B"
+        android:textSize="35dp"
+        android:textColor="#FFEB3B"
+        />
+
+    <Button
+        android:id="@+id/btnPlacement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Check Placements"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="SWITCH"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
