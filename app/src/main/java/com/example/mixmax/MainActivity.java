@@ -37,5 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnReverse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ReverseActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
